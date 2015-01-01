@@ -1,0 +1,23 @@
+/*!
+ * Project name: HTML5
+ * Version: 1.0.1
+ * Author: Vedran Jaic
+ */
+
+// Variables
+// @import "susy";
+@import "variables";
+@import "mixins";
+@import "../css/normalize";
+
+// ------------------------------------[ style.css start ]
+// Defaults
+@import "defaults";
+@import "typography";
+
+// Pages layout
+@import "header";
+@import "layout-index";
+@import "footer";
+
+// --------------------------------------[ style.css end ]

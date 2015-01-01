@@ -1,0 +1,13 @@
+// Mixins
+// http://css-tricks.com/media-queries-sass-3-2-and-codekit/
+@mixin breakpoint($point) {
+	@if $point == lg {
+		@media (min-width: 1200px) { @content; }
+	}
+	@else if $point == md {
+		@media (min-width: 992px) { @content; }
+	}
+	@else if $point == sm {
+		@media (min-width: 768px)  { @content; }
+	}
+}
