@@ -48,6 +48,7 @@ gulp.task('styles', function () {
 		.pipe(sass({
 			style: 'expanded',
 			errLogToConsole: false,
+			require: ['susy'],
 			onError: function(err) {
 				return notify().write(err);
 			}
@@ -98,9 +99,7 @@ gulp.task('images', function () {
 gulp.task('browser-sync', function() {
 	browserSync({
 		proxy: "localhost:8888",
-		ghostMode: false,
-		notify: false,
-		open: "external"
+		ghostMode: false
 	});
 	gulp.watch(src.php, reload);
 	gulp.watch(['style.css'], reload);

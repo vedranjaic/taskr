@@ -10,7 +10,7 @@
 		</div>
 		<!-- /.info-box -->
 
-		<form action="#">
+		<form action="#" class="todo-list">
 
 			<ul>
 				<li>
